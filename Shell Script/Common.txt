@@ -1,0 +1,94 @@
+What IS LINUX Shell ?
+A Shell provide an environment to a user to execute commands and interact with kernel.
+
+1> Application
+2> Shell 
+3> Kernal
+4> Hardware
+
+There are different types of shell
+> bash
+> sh
+> ksh
+> tsh
+> fish
+> zsh
+
+What Is My Shell Type ?
+
+Ans You can check using
+    -> echo $0
+    -> whoami
+    -> cat /etc/shells
+
+What IS SHELL SCRIPTING ?
+
+   > Shell script consist of set of commands to perform a task.
+   > All the commands execute sequentially.
+   > Some task like file manipulation program execution, user interaction, 
+     automation of task etc can be done.
+
+FIRST BASIC SCRIPT..................
+  -> vi 01_basic.sh
+
+  code:- 
+  #!/bin/bash
+  echo "hello World!"
+  
+  -> ls > The ls command writes to standard output the contents 
+        of each specified Directory parameter or the name of each 
+        specified File parameter, along with any other information 
+        you ask for with the flags
+
+  -> pwd > The pwd command writes to standard output the full path 
+         name of your current directory (from the root directory)
+
+  -> cd > The cd command in Linux is used to change the current 
+         working directory
+
+  -> i - insert
+  -> Shift + colon
+  -> wq
+  
+  Run the Script use
+  -> cat 01_basic.sh
+
+   WHAT IS SHEBANG ?
+
+   #!/bin/bash
+
+   SENDING OUTPUT TO TERMINAL............
+
+   echo "Hello World!"
+
+   HOW TO RUN A SCRIPT..............
+
+   > Make sure script has execute permission rwx
+   > Run using
+         ./script.sh
+         /path/script.sh
+         bash script.sh
+    . Ctrl+C to terminate
+    . Ctrl+z to stop
+
+    execute permission Linux -> ls -ltr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
