@@ -77,9 +77,79 @@ Get Ready with your Linux Setup for Practise
   
             # rm Kaushal.csv
 
+     11.How to edit a file in Linux ?
 
+     Ans -> # vi <file_name>
 
+            # nano <file_name>
 
+            # vi  Kaushal
+
+            i (Insert)
+
+            esc (Remove Insert)
+
+            Shift + Colon (To save the file)
+
+            wq (To exit the file)
+
+            # nano Kaushal (Use to easy)
+
+     12.How to create a directory/folder in Linux ?
+
+     Ans -># mkdir <dir_name>
+
+            # mkdir Kaushal
+
+     13.How to delete a directory/folder in Linux ?
+
+     Ans -> # rmdir <dir_name>
+
+            # rm -rf <dir_name>
+            
+     14.How to change path or move to another folder in Linux ?
+
+     Ans -> # cd /path/folder
+
+            # cd .. (back to the folder)
+
+            # cd ../.. (use 2 folder back)
+
+            # cd / (forward /)
+
+     15.How to copy and paste a file from one folder to another in Linux ?
+
+     Ans -> # cp <file> /dest/path
+ 
+            # cp Kaushal.csv newfolder/
+
+     16.How to copy content of a file to another file in Linux ?
+
+     Ans -> # cp fileA fileB
+            
+            # cp Kaushal.csv Kaushak_copy.csv
+
+     17.How to cut - paste a file from one folder to another in Linux ?
+
+     Ans -> # mv <file> /dest/path
+
+            # mv Kaushal newfolder/
+
+     18.How to rename a file in Linux ?
+
+     Ans -> # mv fileA fileNewName
+
+            # mv Kaushal Kaushal Singh
+      
+     19.How to read or diplay top 5 lines from a file in Linux ?
+
+     Ans -> # head -5 file_name
+
+            # head -5 Kaushal.csv
+
+     20.How to read or diplay bottom 5 lines from a file in Linux ?
+
+     Ans -> # tail -5 file
 
 
 
