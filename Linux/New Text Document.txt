@@ -151,6 +151,75 @@ Get Ready with your Linux Setup for Practise
 
      Ans -> # tail -5 file
 
+     21.How to SORT the content from a file in Linux ?
 
+     Ans -> # sort file
+ 
+            # sort -r file
+
+            # sort Kaushal.txt
+
+            # sort -r Kaushal.txt
+
+     22.How to display UNIQUE content from a file in Linux ?
+
+     Ans -> # sort file | uniq
+  
+            # sort Kaushal.txt | uniq
+
+     23.A file has 9 lines.
+        How to split this file in 3 different files in Linux ?
+
+     Ans -> # split -l 3 file
+
+            # split -l 4 kaushal.txt
+
+     24.How to search a word and display matching content from a file in Linux ?
+
+     Ans -> # grep "word" file
+
+            # grep "Jony" Kaushal.txt
+
+     25.How to search multiple words and display matching content from a file in Linux ?
+
+     Ans -> # egrep "word1|word2" file
+
+            # egrep "Kore|Ana" Kaushal.csv
+
+     26.How to use WILDCARDS in Linux ? * [] {}
+
+     Ans -> # ls file*
+
+            # touch file{1..5}
+
+            # ls K*
+
+            # ls *.csv 
+
+            # touch Kaushal{1..10}
+
+     27.How to SHUFFLE content of file in Linux ?
+
+     Ans -> # shuf file
+      
+            # shuf Kaushal.csv
+
+     28.How to COUNT no. of lines in a file in Linux ?
+
+     Ans -> # wc -l file
+
+            # wc -l Kaushal.csv
+
+     29.How to check if two files are identical or not in Linux ?
+
+     Ans -> # cmp fileA fileB
+
+            # cmp Kaushal Rashi
+
+     30.How to compare and display difference between two files in Linux ?
+   
+     Ans -> # diff -u fileA fileB
+
+            # diff -u Kaushal Rashi
 
 
