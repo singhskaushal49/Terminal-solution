@@ -1,0 +1,75 @@
+Docker
+ 
+* Docker Installation on Mac, Windows & Linux
+* Creating Demo Project on Node and Python
+* Creating DockerFile
+* Creating Docker Image
+* Running Containers
+* Pre-defined Images
+* DockerHub 
+* Docker Volumes and Network
+* Docker Compose
+
+What is a Docker ?
+
+* Docker is a containerization platform for developing, packaging shipping, and running applications.
+
+* It provides the ability to run an application in an isolated environment called a container.
+
+* Makes deployment and development efficient.
+
+What is a Container ?
+
+* A way to package an application with all the necessary dependencies and configuration.
+
+* It can be easily shared.
+
+* Makes deployment and development efficient.
+
+Docker Containers Vs VMs
+
+-> Docker Containers                 
+ 
+* Low impact on OS, very fast, low disk space usage
+* Sharing, re-building and distribution is easy
+* Encapsulate apps instead of whole machine
+
+-> VMs
+
+* High impact on OS,slower, high disk space usage
+* Sharing, re-building and distribution is challenging
+* Encapsulate whole machine
+
+Main components of Docker
+
+* Dockerfile
+* Docker Image
+* Docker Container
+* Docker Registry
+
+
+It is a simple text file with instruction to build an image.
+                    DockerFile
+                        |
+                        |
+                        |
+Single File with all the dep and lib to run the program.
+                       Image
+....................................................
+|                        |                         |
+|                        |                         |
+|                        |                         |
+Container             Container                 Container
+                 Instance of an Image
+
+===============
+Docker Registry
+===============
+A Docker registry is a central repository for storing and distributing Docker images.
+
+DockerFile===>Image MyApp v1.0===> Docker Hub Or Private Registry===>MyApp v1.0
+
+* What is Docker HUB ?
+* Difference Registry vs Repository
+* Installation of DOCKER
+
