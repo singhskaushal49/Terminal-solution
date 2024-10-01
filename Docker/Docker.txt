@@ -72,4 +72,70 @@ DockerFile===>Image MyApp v1.0===> Docker Hub Or Private Registry===>MyApp v1.0
 * What is Docker HUB ?
 * Difference Registry vs Repository
 * Installation of DOCKER
+* System Requirement For Windows
+
+> WSL version 1.1.3.0 or later.
+> Windows 11 64-bit: Home or Pro version 21H2 or higher, or Enterprise or Education version 21H2 or higher.
+
+>Windows 10 64-bit:
+
+> We recommend Home or Pro 22H2 (build 19045) or higher, or Enterprise or Education 22H2 (build 19045) or higher.
+> Minimum required is Home or Pro 21H2 (build 19044) or higher, or Enterprise or Education 21H2 (build 19044) or higher.
+
+Create react App
+
+# node -v
+# npx create-react-app testapp
+# cd testapp
+# npm start
+# npm run build
+# npm start ====> for ====> node_moudules
+
+Dockerfile
+
+                                                      (ctrl + s)
+DOCKER IMAGE
+
+# docker build .
+# docker image ls
+
+RUN & Manage Docker Containers
+
+                IMAGE ID
+# docker run  2f02e42127df
+
+Check running Container
+
+# docker ps
+# docker stop <filename>
+
+Run container
+
+# docker run -p 3000:3000 2f02e42127df
+
+Running Container In Detached Mode
+
+# docker run -d -p <Image ID>
+
+Running Multiple Containers
+
+# docker run -d -p 3000:3000 2f02e42127df
+
+# docker run -d -p 3001:3000 2f02e42127df
+
+# docker run -d -p 3002:3000 2f02e42127df
+
+# docker run -d -p 3003:3000 2f02e42127df
+
+Useful Info to Manage Containers
+
+# docker ps -a
+# docker rm <filename 1><filename 2><filename 3>
+# docker run -d --rm -p 3001:3000 2f02e42127df
+# docker ps -a (background runing containers)
+
+
+
+
+
 
