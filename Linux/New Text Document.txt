@@ -82,7 +82,7 @@ Get Ready with your Linux Setup for Practise
      Ans -> # vi <file_name>
 
             # nano <file_name>
-
+t
             # vi  Kaushal
 
             i (Insert)
@@ -222,4 +222,143 @@ Get Ready with your Linux Setup for Practise
 
             # diff -u Kaushal Rashi
 
+     31.How to find a file in Linux ?
 
+     Ans -> # find /path/ -name <file> 
+
+            # find ./ -name Kaushal.csv 
+ 
+            # find ./ -name *.csv
+
+     32.How to find a file in Linux ?
+
+     Ans -> # updatedb
+
+            # locate <file>
+
+            # locate kaushal.csv
+
+            # sudo updatedb
+
+     Utility Commands
+
+     33.How to display previously used commands in past ?
+
+     Ans -> # history 
+
+            # history | grep sort
+
+     34.How to check syntax and options available for a command ?
+
+     Ans -> # help
+
+            # ls --help
+
+            # ls --help | more
+
+     35.How to read or get mor info about a command ?
+
+     Ans -> # man
+
+            # mas ls
+
+     36.How to check which executable is using for a command ?
+
+     Ans -> # which
+
+            # which ls
+
+     37.How to use calculator in Linux ?
+
+     Ans -> # bc
+
+     38.How to check CALENDAR of last year in Linux ?
+
+     Ans -> # cal
+
+            # cal 2020
+
+            # cal JAN 2022
+
+     39.How to check How Long server has been running in Linux ?
+
+     Ans -> # uptime 
+
+            # uptime -a
+
+     40.How to record your activity on termial in a file ?
+
+     Ans -> # script
+
+     41.How to create a short-cut of a long command in Linux ?
+
+     Ans -> # alias l = "ls -ltr"
+
+            # alias -p 
+
+     Zip and Unzip of Files and Folders
+
+     42.How to compress a file in Linux ?
+
+     Ans -> # gzip -k file
+
+            # gzip -k Kaushal.csv
+
+     43.How to decompress a file in Linux ?
+
+     Ans -> # gzip -d file
+
+            # gunzip file
+
+            # gunzip test.csv.gz
+
+            # less test.csv
+
+     44.How to compress a folder in Linux ?
+
+     Ans -> # tar -czf myfiles.tar.gz myfiles/ 
+
+            # tar -czf Kaushal.tar.gz newfolder/ 
+
+            # ls -ltr
+
+     45.How to decompress a folder in Linux ?
+
+     Ans -> # tar -xzf myfiles.tar.gz
+
+            # tar -xzf Kaushal.tar.gz
+
+     46.How to compress multiple files in one zipped file in Linux ?
+
+     Ans -> # zip myfiles.zip file1 file2
+
+            # zip myfiles.zip Kaushal Rashi
+
+     47.How to list files in zipped file ?
+
+     Ans -> # zip -l myfiles.zip
+
+            # unzip myfiles.zip
+
+            # unzip -l myfiles.zip
+
+     Downloading Files from Internet
+
+     48.How to download a file from internet ?
+
+     Ans -> # wget URL_of_file
+
+            # wget -0 opt_file.txt URL_Of_file
+
+            # wget https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe
+
+            # wget -0 Kaushal.txt https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe
+
+     49.How to call an API on Linux ?
+
+     Ans -> # curl http://numbersapi.com/random
+
+     50.How to install an application on Linux ?
+
+     Ans -> # apt or yum/dnf
+      
