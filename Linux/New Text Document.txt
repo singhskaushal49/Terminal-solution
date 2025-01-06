@@ -82,7 +82,7 @@ Get Ready with your Linux Setup for Practise
      Ans -> # vi <file_name>
 
             # nano <file_name>
-t
+
             # vi  Kaushal
 
             i (Insert)
@@ -361,4 +361,195 @@ t
      50.How to install an application on Linux ?
 
      Ans -> # apt or yum/dnf
+
+         -> # yum install nginx 
+
+         -> # sudo yum install nginx
+
+     51.How to check if an application is installed or not on Linux ?
+
+     Ans -> # rpm -qa | grep app
+
+            # dnf list installed
+
+            # rpm -qa | grep sql
+
+            # rpm -qa | grep nginx
+
+            # rpm -qa | grep java
+
+            # rpm -qa | grep Python
+
+     52.How to list available packages to install on Linux ?
+
+     Ans -> # apt search <package_name>
+
+            # yum/dnf list available
+
+            # dnf list available
+
+            # dnf list available | grep MySQL
+
+            # dnf list available | grep java 
+
+    53.How to start/stop a service on Linux ?
+ 
+    Ans -> # systemctl start/stop service_name
+
+        -> # systemctl status firewalld.service
+
+        -> # systemctl status nginx.service  
+
+        -> # systemctl start nginx.service 
+
+        -> # systemctl status nginx.service
+
+        -> # systemctl stop nginx.service
+
+    54.How to list all services on Linux ?
+
+    Ans -> # systemcle list-units --type=service --all
+
+    55.How to list all existing Environment Variables on Linux ?
+
+    Ans -> # printenv   
+
+    55.How to ADD a new Environment Variables on Linux ?
+
+    Ans -> # export JAVA_HOME= "/usr/lib/jvm/java_v"
+
+        -> # export PATH = $JAVA_HOME/bin:$PATH  
+
+    56.How to ADD a new Environment Variables permanently on Linux ?
+
+    Ans -> Add env variable in ./bashrc file
+
+        -> # source ~/.bash_profile
+
+    57.How to print a specific column from a CSV file ?
+
+    Ans -> # awk -F , '{print $2}' file.csv
+
+    58.How to display starting two characters of all line ?
+
+    Ans -> # cut -c1-2 file.txt
+
+    59.How to display a specific line from a file ?
+    
+    Ans -> # sed -n '5p' file.txt
+
+    60.How to replace a specific word within a file ?
+
+    Ans -> # sed -n 's/from/to/g' file.txt
+
+    61.How to convert the content to Uppercase or Lowercase within a file ?
+
+    Ans -> # tr [:lower:] [:upper:] <file.txt>
+
+           # tr [:punct:] z <file.txt>
+
+           # tr [:digit:] z <file.txt>
+
+    62.How to extend or shrink size of a file ?
+
+    Ans -> # truncate -s 100M file.txt
+
+    63.How to display following line in vertical line ? ABCDE
+
+    Ans -> # echo "ABCDE" | fold -w1
+
+    64.How to change user or login as different user in Linux ?
+
+    Ans -> # su <user_name>
+
+    65.How to exit as current user or close terminal in Linux ?
+
+    Ans -> # exit
+
+    66.If you are not root user, how to execute admin commands like installing new apps ?
+
+    Ans -> # sudo yum install httpd 
+
+                        1. Access
+                        2. Remote
+                        3. Servers
+
+    67.How to access remote Linux server ?
+
+    Ans -> # ssh user@hostname
+
+    68.How to copy a file to a remote Linux server ?
+
+    Ans -> # scp file user@hostname:/tmp/ 
+
+               Working with Permissions
+
+    69.How to check permissions of a file ?
+
+    Ans -> # ls  -ltr
+
+           # rwx rw- r--
+
+           User    Group   Other
+
+    70.How to modify permissions of a file ?
+
+    Ans -> # chmod a + rwx file.txt
+
+           u - user, g - group, o - other
+
+           a - all
+
+    71.How to change ownership of a file ?
+
+    Ans -> # chown root file.txt  
+
+    72.How to change group ownership of a file ?
+
+    Ans -> # chgrp paul file.txt 
+
+                   Memory INFO 
+
+    73.How to check free RAM space ?
+
+    And -> # free 
+
+           # free -h
+
+    74.How to check % Memory and CPU Utilization ?
+
+    Ans -> # top 
+
+    75.How to check disk Utilization ?
+
+    Ans -> # du
+
+    76.How to check filesystem available and disk space allocated ?
+
+    Ans -> # df  
+
+                  System INFO
+
+    77.How to check hostname of your Linux server ?
+
+    Ans -> # hostname
+
+    78.How to check cpu/core/thread info of your Linux server ?
+
+    Ans -> # lscpu
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+
+     
       
