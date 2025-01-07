@@ -537,6 +537,112 @@ Get Ready with your Linux Setup for Practise
     78.How to check cpu/core/thread info of your Linux server ?
 
     Ans -> # lscpu
+
+    79.How to check type of architecture of your Linux server ?
+
+    Ans -> # arch
+
+    80.How to see list of storage devices, disk partition on your Linux server ?
+
+    Ans -> # lsblk
+
+    81.How to see OS name of Linux server ?
+
+    Ans -> # uname -a
+
+    82.How to check if a process(Java) is running or not ?
+
+    Ans -> # ps -ef | grep java 
+
+    83.How to get PID of a process ?
+
+    Ans -> # pgrep chron  
+
+    84.How to stop a process by PID ?
+
+    Ans -> # kill -9 PID
+
+    85.How to stop a process by its name ?
+
+    Ans -> # pkill httpd
+
+    86.How to see all the active jobs ?
+
+    Ans -> # jobs
+
+    87.How to resume a job in background ?
+
+    Ans -> # bg
+
+    88.How to resume a job in foreground ?
+
+    Ans -> # fg
+    
+    89.How to run a script in background ?
+
+    Ans -> # nohup ./script >/dev/null &
+
+                Networking Info
+
+    90.How to check IP of Your machine ?
+
+    Ans -> # ifconfig
+
+    91.How to check if a server or website is accessible or not ?
+
+    Ans -> # ping www.google.com
+
+    92.How to check if a IP:PORT is accessible and open or not ?
+
+    Ans -> # telnet IP Port
+
+    93.How to check if port is open or not on our server ?
+
+    Ans -> # netstat -putan | grep 80
+
+    94.How to check all hubs in network path to reach a website ?
+
+    Ans -> # traceroute
+
+    95.How to restart our Linux server ?
+
+    Ans -> # reboot
+
+    96.How to shutdown our Linux server ?
+
+    Ans -> # shutdown
+
+                       User Creation
+
+    97.How to create a new user on our Linux server ?
+
+    Ans -> # useradd
+
+    98.How to change password for the user ?
+
+    Ans -> # passwd
+
+    99.How to create a new group on our linux server ?
+
+    Ans -> # groupadd
+    
+    100.How to check UserID or GroupID of a user ?
+
+    Ans -> # id user 
+
+    101.How to delete a user or group ?
+
+    Ans -> # userdel <user>
+    
+           # groupdel <group>
+
+    102.How to schedule a script to run on a particular date/time ?
+
+    Ans -> # at
+
+           # crontab
+
+
     
 
     
