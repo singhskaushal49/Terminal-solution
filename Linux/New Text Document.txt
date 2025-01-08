@@ -229,7 +229,7 @@ Get Ready with your Linux Setup for Practise
             # find ./ -name Kaushal.csv 
  
             # find ./ -name *.csv
-
+            
      32.How to find a file in Linux ?
 
      Ans -> # updatedb
