@@ -133,6 +133,27 @@ Useful Info to Manage Containers
 # docker rm <filename 1><filename 2><filename 3>
 # docker run -d --rm -p 3001:3000 2f02e42127df
 # docker ps -a (background runing containers)
+# docker run -d --rm --name "mywebapp" -p 3001:3000 2f02e42
+
+Managing Docker Images
+
+# docker build -t mywebapp:01 .
+# docker build -t mywebapp:02 .
+# docker image ls
+# docker rmi mywebapp:02
+
+What If We Update Project
+
+# docker build -t mywebapp:02 .
+# docker run -d --rm --name "mywebapp" -p 3001:3000 mywebapp:01
+# docker run -d --rm --name "mywebapp" -p 3002:3000 mywebapp:01
+# docker pull python 
+# docker run python: latest
+# docker pull nginx
+# docker image ls
+# docker run -p 8080:80 nginx:latest
+
+Docker Container With Interactive Mode
 
 
 
