@@ -1,3 +1,5 @@
+1 File management System
+
 OS store and manage data on disk or partitions using a structure called Filesystem
 
 FileSystem includes files, directories and it's rekated permissions
@@ -75,4 +77,86 @@ The Linux filesystem starts at the root directory, denoted by a single slash (/)
 
 > /mnt - Similar to /media, this is a traditional mount point where system administrators can mount Temporary filesystems while using or configuring them.
 
-> /opt - Intended for the installation of add-on appliction software packages. Large software 
+> /opt - Intended for the installation of add-on appliction software packages. Large software packages that are not part of the default installation can be placed here to avoid cluttering the system directories.
+
+> /proc - A virtual and dynamic directory as it only exists in memory. It does not use disk space. It contains information about system resources, hardware, and running processes. It,s a pseudo-filesystem then provides an interface to kernel data structures.
+
+> /run - A Temporary filesystem that stores transient state files, like process IDs or lock files, since it is cleared and recreated at every boot.
+
+> /sbin - Contains binary (executable) files that are mostly needed by the system administrator. These include system management commands like fdisk, shutdown,ip,etc.
+
+> /srv - Contains data which servers hosted on the system may need, such as web pages served by a web server.
+
+> /sys - Similar to / proc, this is another virtual filesystem that provides an interface to the kernal. It contains information and settings about the system's devices, drivers, and some kernal features
+
+> /usr - Considered the secondary hierarchy because it contain all user applications and a variety of other things for day-to-day operations, including libraries, documebtations, and much more. Subdirectories include /usr/bin,/usr/sbin,/usr/local, and /usr/share, among others.
+
+2. Linux Packages management
+
+ Topics  
+
+> What is package management ?
+> Packages management tools 
+   . yum
+   . dnf
+   . rpm
+   . apt 
+> Difference between Upgrade or Update ?
+> Rollback the patches or updates
+
+Packages management
+   
+   It's all about packages
+
+     > Installing
+     > Upgrading
+     > Deleting
+     > View Packages Info 
+     > Packages config
+
+> manage software using YUM/DNF and RPM for your Red Hat-based Linux systems like CentOs
+
+> APT for Debian and based, Ubuntu, Kali Linux etc
+
+YUM YELLOW-DOG UPDATER MODUFIED
+
+> YUM is the primary package management tool for redhat .
+
+> YUM performs dependency resolution when installing, updating, and removing software packages .
+
+> YUM can manage package from installed repositories in the system or from . rpm packages.
+
+. How to install and remove a package
+   # yum install nginx -y
+   # yum remove nginx
+
+. How to upgrade and update a package
+   # yum upgrade package
+   # yum update package
+
+> What is the difference between
+  yum Update & Upgrade
+
+Upgrade: Will delete the old Packages
+Update: Keep the old packages, we can rollback
+
+YUM COMMANDS
+
+> you can see all the options using
+  # yum -option
+
+> To check the available updates for packages
+  # yum check-update
+
+package RollBack 
+
+> To see the past work done related to package, which will show you the activity with date and time
+  # yum history
+
+> We can simply undo or redo any action using
+  # yum history undo/redo <id>
+
+RPM REDHAT PACKAGE MANAGER
+
+> Using RPM, you can install, uninstall, and query in
+
