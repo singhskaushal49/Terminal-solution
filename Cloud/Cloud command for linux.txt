@@ -158,5 +158,144 @@ package RollBack
 
 RPM REDHAT PACKAGE MANAGER
 
-> Using RPM, you can install, uninstall, and query in
+> Using RPM, you can install, uninstall, and query individual software packages.
+
+> Issue: It cannot manage dependency resolution like YUM
+
+> RPM maintains a database of installed packages, which enables powerful and fast queries.
+
+ RPM 
+
+ > To install, upgrade or delete an . rpm package using RPM,
+
+    # rpm -i package-file
+    # rpm -U package-file
+
+    # rpm -ivh package-file
+    # rpm -evh package-file
+
+  (v-verbose, h for hash to show progress)
+
+> To query all the installed package
+  # rpm -qa
+
+> More info about the package
+  # rpm -qi <package_name>
+
+> Info about config files for a packages
+  # rpm -qc <package_name>
+
+DNF DANDIFIED YUM
+
+From Redhat/Centos 8
+
+  > sudo dnf list available
+  > sudo dnf list installed
+
+  > sudo dnf update/upgrade
+  > sudo dnf install package.name
+  > sudo dnf remove package.name
+
+  > sudo dnf info package.name
+  > sudo dnf search package
+
+  APT 
+
+  For Ubuntu
+
+  > apt install package_name
+  > apt remove  package_name
+
+  > apt autoremove (to remove the dependencies)
+
+  > apt update (to update the repo)
+  > apt-cache search apache
+
+3. Logs Analysis & Monitoring
+
+  What are log files ?
+
+  A log file stores events, processes, messages, and other data from applications, operating systems, or devices.
+
+  They provide information based on the actions performed by users, playing an important role in monitoring
+
+  Log directory in Linux
+
+     /var/log
+
+  log file
+
+    > boot
+    > chron
+    > secure
+    > maillog
+    > httpd
+    > messages
+
+4. Files Permissions
+
+How to check permissions of a file ?
+   # ls -ltr
+
+drwxr-xr-x. 2 paul paul 64 Feb 8 17:02 Downloads
+-rw-r--r--. 1 paul paul 0 Feb  10 12:16 paulfile
+-rwxr-xr-x. 1 paul paul 24 Apr 13 16:20 test.sh
+
+Each permission set can contain four basic representations:
+
+>  r means that the file is readable.
+>  w means that the file is writable.
+>  x means that the file is executable(you can run it as a program).
+>  - means "nothing" (more specifically, the permission for that slot in the set has not been granted).
+
+
+How to modify permissions of a file ?
+
+   # chmod a+rwx file.txt
+
+   u mean user
+   g mean group
+   o mean other
+   a mean all
+
+   #  chmod o+w rfile.txt
+
+   # chmod u+x file.txt
+   # chmod g-w file.txt
+   # chmod u=rwx, g=rw, o=r file.txt
+
+   Recursively updates the file permissions
+
+   # chomd -R u+x mydir
+
+   - R will change permission of directory and files inside it
+
+   Numeric (Octal) Method 
+
+How to modify permissions of a file ?
+
+   # chmod 777 file.txt
+   # chmod 644 file.txt
+
+Different supported no.
+
+  > 0: No permission.
+  > 1: Execute only.
+  > 2: Write only.
+  > 3: Write and execute (1+2).
+  > 4: Read only.
+  > 5: Read and execute (4+1).
+  > 6: Read and write (4+2).
+  > 7: Read, write, and execute (4+2+1).
+
+Manage OwnerShip
+
+Using CHOWN
+   
+   # chown user:group filename
+   # chown paul: QA file.txt
+
+Using CHGRP
+   
+   # chgrp group filename
 
