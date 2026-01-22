@@ -299,3 +299,39 @@ Using CHGRP
    
    # chgrp group filename
 
+Basic networking concepts (IP addressing, ping, netstat, ss)
+
+# ping www.google.com
+# ping 127.0.0.1
+# netstat
+# arp
+# arp -a
+# ping 255.255.255.255
+# pathping www.google.com
+# tracert www.google.com
+# nslookup 
+
+whois.com
+
+# ipconfig
+# ipconfig -a
+# route
+# route print
+# hostname
+# getmac
+# nbtstat
+# nbtstat -n
+# nbtstat -s
+# tasklist
+# taskkill /PID 2996
+# systeminfo
+# netsh
+
+# netsh > ?
+
+# net view 
+# net share
+# wmic
+# wmic bios get smbiosbiosversion 
+# msinfo32
+ 
