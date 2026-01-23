@@ -299,7 +299,7 @@ Using CHGRP
    
    # chgrp group filename
 
-Basic networking concepts (IP addressing, ping, netstat, ss)
+5. Basic networking concepts (IP addressing, ping, netstat, ss)
 
 # ping www.google.com
 # ping 127.0.0.1
@@ -334,4 +334,66 @@ whois.com
 # wmic
 # wmic bios get smbiosbiosversion 
 # msinfo32
+
+6. ps (process status)
+used to display all running process in the linux system.
+
+# ps
  
+ syntax:
+
+ ps [OPTIONS]
+ ps - Shows the process of current shell
+
+ PID - unique process ID
+ TTY - terminal type of user logged in to
+ TIME - amount of CPU in min and sec that process has been running
+ CMD = name of the command that launched the process
+
+Most widely used command
+To see all the running process
+# ps -e
+# ps -A 
+
+# ps -ef (for full format)
+
+To see all the running process in BSD (Berkeley Software Distribution) format
+
+ldeally it gives you more information
+
+# ps aux
+# ps -ef | grep httpd 
+# systemctl status httpd
+# ps -ef | grep java
+
+To see the process by username
+
+# ps -u <user_name>
+# ps -G <group_name>
+# ps -u root
+
+To see the process tree
+
+# ps -ejH
+
+7. Linux Service Management Using SYSTEMCTL Command 
+
+SYSTEMCTL
+
+What is systemctl ?
+
+It is used to control the status of teh services Control systemd system.
+
+Example: systemctl status <service_name>
+
+sudo systemctl start/stop <service_name>
+
+> Start or stop a service.
+
+To Check the status
+sudo systemctl status <service_name>
+
+To restart the service
+sudo systemctl restart <service_name>
+
+
