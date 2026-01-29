@@ -384,16 +384,121 @@ What is systemctl ?
 
 It is used to control the status of teh services Control systemd system.
 
-Example: systemctl status <service_name>
+Example: # systemctl status <service_name>
 
-sudo systemctl start/stop <service_name>
+# sudo systemctl start/stop <service_name>
 
 > Start or stop a service.
 
 To Check the status
-sudo systemctl status <service_name>
+# sudo systemctl status <service_name>
 
 To restart the service
-sudo systemctl restart <service_name>
+# sudo systemctl restart <service_name>
 
+
+sudo systemctl enable <service_name>
+
+> Enabling a service causes the system to start the service upon reboot or whenever a computer starts up.
+> The enable subcommand does not start the particular service immediately.
+> you need admin rights
+
+To enable and start at same time
+# sudo systemctl enable --now sshd
+
+To check if a service is enabled ?
+# sudo systemctl is-enabled sshd
+
+# sudo systemctl disable <service_name>
+
+> Disabling a service
+> One can manually start the service
+
+To prevent the service to start 
+# sudo systemctl| mask <service_name>
+
+To check if a service is enabled ?
+sudo systemctl unmask <service_name>
+
+Computer Control commands
+
+# systemctl poweroff
+
+# systemctl reboot
+# systemctl -i reboot (ignoring logged-in users)
+
+To List the sockets in memory available for interporcess communication (IPC)
+
+# systemctl list-sockets
+# systemctl --show-types list-sockets
+
+# systemctl --show-type list-sockets 'systemd*'
+# systemctl --show-type list-sockets --all
+
+Task for you 
+
+> Check the status of the service
+> Stop the service and recheck the status
+> Disable the service, reboot the system and confirm if the service didn't start
+> Enable the service, reboot the system and confirm if the service started
+> Stop the service and mask it and try startung it to check if it is successfull ?  
+
+
+GREP COMMAND 
+
+"Global Regular Expression Print"
+
+Grep command search for a particular string/keyword from a file and print lines matching a pattern,
+
+It check line by line and print lines matching given pattern.
+
+We can use grep anywhere like with files, searching for file, directories etc
+
+grep command syntax
+
+grep [OPTION].. Pattern [File]
+
+Case1
+
+To ignore the upper and lower case while searching
+
+# grep -i "keyword" file
+
+Case2
+
+To search everything except given pattern/keyword
+
+# grep -v "keyword" file           
+
+Case3
+
+To print how many times (count) given keyword present in file 
+
+# grep -c "keyword" file
+
+Case4
+
+To search for exact match of given keyword in a file
+
+# grep -w "keyword" file
+
+Case5
+
+To print the line no. of matches of given keyword in a file
+
+# grep -n "keyword" file
+
+Case6
+
+To search a given keyword in multiple files
+
+# grep "keyword" file1 file2...
+
+Note: By default result of multiple files shows file name in output .
+
+Case7
+
+To suppress file names while search a give keyword in multiple files
+
+# grep -h "keyword" file1 file2...
 
