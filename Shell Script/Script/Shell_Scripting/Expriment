@@ -1,0 +1,68 @@
+
+basename - strip directory info and only give filename
+Example :- basename /home/paul/myscripts/test.csv
+
+dirname - strip the filename and gives directory path
+Example :- dirname /home/paul/myscripts/test.csv
+
+realpath - gives you full path for a file
+Example :-  realpath test.csv
+
+RANDOM - A random integer between 0 and 32767 is generated
+Example :- echo $RANDOM
+
+UID - User ID of the user logged in
+Example :- echo $UID 
+
+Redirection in scripts
+        > >>
+Example :- ls > all_files.txt
+           pwd >> all_files.txt
+           hostname >> all_files.txt 
+
+In case if you don't wanna print the output of a command on 
+terminal or write in a file,
+
+We can redirect the output to
+/dev/null
+
+Example:-
+#cd /root &> /dev/null 
+
+PRINT NAME OF THE SCRIPT 
+
+echo  "The name of the script is: ${0}"
+
+DEBUGGING SCRIPTS 
+
+If We can enable the debugging of the script using below in 
+the script
+
+set -x
+
+DEBUGGING SCRIPTS
+
+If We want to exit our script when a command fail
+
+set -e
+
+Backgroud Run
+
+chmod +x *
+
+Save data Backgroud Save
+nohup ./script.sh &
+
+For scheduling only one time, use AT
+
+at 12:09 PM
+ <your_command>
+Ctrl + D
+
+atq to check scheduled job
+atrm <id> to remove the schedule
+
+To check the existing jobs - crontab -l
+To add new job             - crontab -e
+
+* * * * cd /home/paul/scripts && ./create_file.sh 

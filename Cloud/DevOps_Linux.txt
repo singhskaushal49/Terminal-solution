@@ -1,0 +1,81 @@
+                   DEVSECOPS -  DevOps Linux
+
+> How does the Internet Work ? What are servers ?
+> What is Linux OS ? How to Setup a Linux Server ?
+> Linux Basic Commands For DevOps Engineer
+> Advanced Linux Commands For DevOps
+> Users and Groups Management in Linux
+> File Management In Linux
+> File Transfer Commands
+> Linux Networking Commands
+> Pro Linux Commands AWK, GREP, FIND, SED 
+> Linux Volume Management
+> LVM (Logical Volume Manager) In Linux
+
+Day - 1
+
+>> How does the Internet Work ?
+>> What is server ?
+>> Difference between the web server and the application server ?
+>> Types of application ?
+>> What are standalone apps ?
+>> What are web applications ?
+>> What is application support ?
+>> What is application maintenance ?
+
+       which OS are you working on ?
+
+       90 % -> Windows
+       90 % -> Apps -> Linux
+
+>> Introduction of Linux -
+
+1> What is Linux ? -> Introduction to Linux Operating System (OS) 
+2> How to install Linux ?
+3> how to Downloads & install Linux (Ubuntu) on a Windows PC ?
+4> Difference b/w Linux and Windows ?
+5> Software remote location server tools ?
+6> What are the kernel, Bootloader, and shell ?
+7> Desktop environment ?
+8> Linux System Architecture ?
+9> Information about hardware ?
+10> Linux file system ?
+11> Difference between Linux and Unix ?
+12> States of Processes in Linux ?
+
+*  What is GRUB ? fullform (GRand Unified Bootloader)
+  Ans:- GRUB is the program on Linux systems that loads and manages the boot process .
+
+Apps ---> Shell ---> Kernel ---> Hardware
+
+Day 2 (Commands)
+
+1> ls
+2> cd 
+3> pwd 
+4> mkdir
+5> Delete Directory files rm, rmdir
+6> cat , zcat
+7> Touch
+8> Head
+9> Tail, tali -f
+10> less, more
+11> cp 
+12> mv 
+13> wc
+14> vi editor in Unix and Linux operating systems ?
+15> In (hard kink, soft link)
+16> cut 
+17> tee 
+18> sort 
+19> clear
+20> diff
+
+*Login related
+1> ssh
+*Disk usage
+1> df
+2> du  
+
+
+
